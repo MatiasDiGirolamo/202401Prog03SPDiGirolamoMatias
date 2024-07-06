@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABM de Personas</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <div class="spinner-container" id="spinnerContainer">
+        <div class="spinner"></div>
+    </div>
+    <div id="FormDatos">
+        <h1>Lista de Personas</h1>
+        <table id="tabla_personas">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Fecha de Nacimiento</th>
+                    <th>DNI</th>
+                    <th>Pais Origen</th>
+                    <th>Modificar</th>
+                    <th>Eliminar</th>
+                </tr>
+            </thead>
+            <tbody id="datos_tabla">
+                <tr>
+                    <td>1</td>
+                    <td>Juan</td>
+                    <td>Pérez</td>
+                    <td>1990-01-01</td>
+                    <td>12345678</td>
+                    <td>N/A</td>
+                    <td><button class="modificar">Modificar</button></td>
+                    <td><button class="eliminar">Eliminar</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <button id="RegistrarABM">Agregar Elemento</button>
+    </div>
+    <br>
+    <div id="abm">
+        <h1>ABM</h1>
+        <label for="nombre">ID:</label>
+        <input type="text" id="IDinput" name="IDinput" readonly>
+        <br>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="Nombreinput" name="Nombreinput">
+        <br>
+        <label for="nombre">Apellido:</label>
+        <input type="text" id="Apellidoinput" name="Apellidoinput">
+        <br>
+        <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+        <input type="text" id="fechaNacimientoinput" name="fechaNacimientoinput">
+        <br>
+        <label for="opcionesinput">Tipo</label>
+        <select id="opcionesinput">
+            <option value="Ciudadano">Ciudadano</option>
+            <option value="Extranjero">Extranjero</option>
+        </select>
+        <br>
+        <label for="dni">DNI:</label>
+        <input type="text" id="DNIinput" name="DNIinput">
+        <br>
+        <label for="Pais Origen">País Origen:</label>
+        <input type="text" id="paisOrigeninput" name="paisOrigeninput">
+        <br><br>
+        <button style="margin-right: 25px;" id="btnAgregarRegistro">Aceptar</button>
+        <button id="cancelar">Cancelar</button>
+    </div>
+</body>
+</html>
